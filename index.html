@@ -16,8 +16,150 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                Welcome to
+                ### Absences Web Application
+                The following pages provide a high level overview of Application's functionality and technology.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+The Application enables registered users (employees) to record instances of their absence from office.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### Absence record
+An absence record consist of start and end date/times, absence category, brief description and timestamp when requested.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### Registered user
+The Application stores a profile of every registered user.
+
+The profile consists of name, surname, brief descripton, userId, email address, role and manager's name.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### Registered user's role
+The role of a user in the Application is either Manager or Subordinate.
+
+The Application equips Manager users with additional privileges.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### Registered user's Manager
+User's profile includes the user's manager.
+
+Therefore it provides a mechanism to store the hierarchy of employees.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### Absences - users
+Each user can:
+* record new absence
+* view her own absence records
+* download a CSV file containing her own absence records
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### Absences - managers
+Manager can also:
+* view her team members absence records
+* download a CSV file containing her team members absence records
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### User Profile
+Each user can edit her own profile.
+
+The user however cannot modify her role or manager's name.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### User Profile
+The Manager can modify her team member's profile. The Manager can:
+* change email address
+* promote/demote a user to Manager/Subordinate respectively by changing her role
+* reassign the user to a different team by changing the Manager's name
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### New User
+New user profile is created when a manager requests a new user account to be created.
+
+The manager must provide user's name, surname, userId and email address.
+
+The manager may also change user's role and manager's name from their default values.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### New User invite
+When the new profile is created, an email is sent to the new user's email address.
+
+The email advises the user, that the account has been created.
+
+It provides a link to enable the user to set her password.
+
+It also invites the user to start using the Application by visiting her profile page.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### Technology
+The Application is built using the following technologies:
+* Python 3.7, Flask 1.1.2;
+* HTML5, Bootstrap4, Jinja2;
+* SQLite, can be easily rolled out to MySQL.
+* git, Docker.
+
+The Application is published on OpenShift.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+The Application is available at the following address:
+
+http://www.alekscorrugatedcontainers2005.cf
+
+This address is redirected to OpenShift platform via a secure, HTTPS, link.
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                <!-- .slide: data-background="#0F0F0F" -->
+                ### Contact
+Please contact me on
+
+admin@alekscorrugatedcontainers2005.cf
+
+Thank you for watching.
+            </script>
+        </section>
 			</div>
 		</div>
 
@@ -38,3 +180,7 @@
 		</script>
 	</body>
 </html>
+
+<!--
+https://help.github.com/en/github/working-with-github-pages/getting-started-with-github-pages
+-->
